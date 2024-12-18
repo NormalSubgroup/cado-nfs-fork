@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/ccwrap.pl -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 CMakeFiles/test_iceildiv.dir/test_iceildiv.c.o -o test_iceildiv 

@@ -1,0 +1,12 @@
+# CMake generated Testfile for 
+# Source directory: /root/tools/cado-nfs/tests/estimate_matsize
+# Build directory: /root/tools/cado-nfs/build/dkcd7jqtSk17et/tests/estimate_matsize
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(builddep_estimate_matsize "/usr/bin/cmake" "--build" "/root/tools/cado-nfs/build/dkcd7jqtSk17et" "--target" "estimate_matsize_dependencies")
+set_tests_properties(builddep_estimate_matsize PROPERTIES  _BACKTRACE_TRIPLES "/root/tools/cado-nfs/tests/cado_test.cmake;305;add_test;/root/tools/cado-nfs/tests/cado_define_test.cmake;217;cado_epilogue_create_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;3;cado_define_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;0;")
+add_test(builddep_estimate_matsize_p30 "/usr/bin/cmake" "--build" "/root/tools/cado-nfs/build/dkcd7jqtSk17et" "--target" "estimate_matsize_p30_dependencies")
+set_tests_properties(builddep_estimate_matsize_p30 PROPERTIES  _BACKTRACE_TRIPLES "/root/tools/cado-nfs/tests/cado_test.cmake;305;add_test;/root/tools/cado-nfs/tests/cado_divert_test.cmake;76;cado_epilogue_create_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;17;cado_divert_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;0;")
+add_test(estimate_matsize_p30 "env" "CADO_NFS_SOURCE_DIR=/root/tools/cado-nfs" "CADO_NFS_BINARY_DIR=/root/tools/cado-nfs/build/dkcd7jqtSk17et" "CMAKE_CURRENT_SOURCE_DIR=/root/tools/cado-nfs/tests/estimate_matsize" "CMAKE_CURRENT_BINARY_DIR=/root/tools/cado-nfs/build/dkcd7jqtSk17et/tests/estimate_matsize" "PROJECT_BINARY_DIR=/root/tools/cado-nfs/build/dkcd7jqtSk17et" "SAGE=/usr/bin/sage" "/root/tools/cado-nfs/tests/test.sh" "--" "env" "bash" "/root/tools/cado-nfs/scripts/estimate_matsize/estimate_matsize.sh" "-params" "/root/tools/cado-nfs/tests/estimate_matsize/p30.ems.params" "/root/tools/cado-nfs/tests/estimate_matsize/p30.poly")
+set_tests_properties(estimate_matsize_p30 PROPERTIES  DEPENDS "builddep_estimate_matsize_p30" SKIP_RETURN_CODE "125" TIMEOUT "180" _BACKTRACE_TRIPLES "/root/tools/cado-nfs/tests/cado_test.cmake;360;add_test;/root/tools/cado-nfs/tests/cado_divert_test.cmake;76;cado_epilogue_create_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;17;cado_divert_test;/root/tools/cado-nfs/tests/estimate_matsize/CMakeLists.txt;0;")

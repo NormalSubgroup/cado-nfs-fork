@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/ccwrap.pl -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 --mpi "CMakeFiles/bcast-file.dir/bcast-file.c.o" -o bcast-file   -L/root/tools/cado-nfs/build/dkcd7jqtSk17et/gf2x/fft/.libs  -L/root/tools/cado-nfs/build/dkcd7jqtSk17et/gf2x/.libs  -L/root/tools/cado-nfs/build/dkcd7jqtSk17et/gf2x/gf2x-fft/.libs 

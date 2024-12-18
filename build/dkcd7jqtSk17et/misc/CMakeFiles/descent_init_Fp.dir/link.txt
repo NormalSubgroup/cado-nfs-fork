@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/cxxwrap.pl -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 CMakeFiles/descent_init_Fp.dir/descent_init_Fp.cpp.o CMakeFiles/descent_init_Fp.dir/smooth_detect.cpp.o -o descent_init_Fp  ../utils/libutils.a -lecm -lpthread -lgmp -lm -fopenmp -lhwloc 

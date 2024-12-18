@@ -17,7 +17,7 @@ container](#containers))
 in most cases the following should work to factor the number 903...693
 using all cores on the local machine
 
-1. `make`
+1. `make`  # 已操作
 2. `./cado-nfs.py 90377629292003121684002147101760858109247336549001090677693`
 
 More details follow.
@@ -28,6 +28,54 @@ refer to [`scripts/cadofactor/README.md`](scripts/cadofactor/README.md).
 Documented example parameter files are in
 [`parameters/factor/params.c90`](parameters/factor/params.c90) and
 [`scripts/cadofactor/parameters*`](scripts/cadofactor/).
+
+---
+
+```shell
+root@dkcd7jqtSk17et ~/t/cado-nfs (main) [1]# ./cado-nfs.py --help
+usage: cado-nfs.py [-h] [--screenlog LEVEL] [--filelog LEVEL] [--parameters PARAMETERS] [--workdir WORKDIR] [--client-threads CLIENT_THREADS] [--server-threads NCORES] [--slaves SLAVES]
+                   [--gfpext GFPEXT] [--ell ELL] [--server] [--dlp] [--mysql] [--mysql-user MYSQL_USER] [--mysql-password MYSQL_PASSWORD] [--verboseparam] [--no-colors] [--dlp-no-keep]
+                   [OPTION ...]
+
+Integer factorization or GF(p) discrete logarithms with the Number Field Sieve
+
+positional arguments:
+  OPTION                options as in parameter file (format: key=value). NOTE that this also includes the integer N or p, and that this sequence of OPTIONs must be contiguous, otherwise parsing
+                        fails. For example, cado-nfs.py 12345 -t 3 some.specific.arg=42 does *NOT* work, since 12345 and some.specific.arg=42 must be put next to eachother in the command line.
+
+options:
+  -h, --help            show this help message and exit
+  --screenlog LEVEL     Screen logging level, e.g., INFO/COMMAND/DEBUG
+  --filelog LEVEL       Log file logging level, e.g., INFO/COMMAND/DEBUG
+  --parameters PARAMETERS, -p PARAMETERS
+                        A file with the parameters to use
+  --workdir WORKDIR, --wdir WORKDIR, -w WORKDIR
+                        Aliases (and conflicts with) tasks.workdir. WORKDIR is created if it does not exist. If unspecified (neither here nor in the parameter files), a temporary directory is
+                        used.
+  --client-threads CLIENT_THREADS
+                        Number of threads for sieving and polynomial selection jobs.
+  --server-threads NCORES, -t NCORES
+                        Overrides tasks.threads. NCORES may be "all", which then is the number of physical cores of the current node. Argument --client-threads may also be passed, leading to
+                        finer grain setting. When used to run the factorization locally, set slaves.nrclient = tasks.threads / max(task.sieve.las.threads, tasks.polyselect.threads)
+  --slaves SLAVES, -s SLAVES
+                        Aliases (and conflicts with) slaves.nrclients
+  --gfpext GFPEXT, -gfpext GFPEXT
+                        Degree of the finite field extension (DLP only)
+  --ell ELL, -ell ELL   Aliases (and conflicts with) ell in parameter files
+  --server              Run a bare server, do not start any clients
+  --dlp, -dlp           Run discrete logarithm computation instead
+  --mysql, -mysql       Use a mysql db for tracking workunits etc
+  --mysql-user MYSQL_USER, -mysql-user MYSQL_USER
+                        Use a mysql db for tracking workunits etc
+  --mysql-password MYSQL_PASSWORD, -mysql-password MYSQL_PASSWORD
+                        Use a mysql db for tracking workunits etc
+  --verboseparam        Enable very verbose parameter parsing
+  --no-colors           Turn off colored output
+  --dlp-no-keep, -dlp-no-keep
+                        Disable the feature that CADO_DEBUG is set by default in dlp mode
+```
+
+---
 
 Supported platforms
 ===================

@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/cxxwrap.pl -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 CMakeFiles/test_rho.dir/test_rho.c.o -o test_rho  ../../polyselect/libpolyselect_common.a ../libtests.a ../../utils/libutils.a -lpthread -lm -fopenmp -lhwloc -lgmp 

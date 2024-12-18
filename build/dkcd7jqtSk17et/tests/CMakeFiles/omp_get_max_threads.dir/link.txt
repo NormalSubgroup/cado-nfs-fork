@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/ccwrap.pl -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -fopenmp CMakeFiles/omp_get_max_threads.dir/omp_get_max_threads.c.o -o omp_get_max_threads 

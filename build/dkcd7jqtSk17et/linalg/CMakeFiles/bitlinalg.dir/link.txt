@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbitlinalg.a CMakeFiles/bitlinalg.dir/blockmatrix.cpp.o
+/usr/bin/ranlib libbitlinalg.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblingen_p8_support.a CMakeFiles/lingen_p8_support.dir/lingen_io_matpoly.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_checkpoints.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_average_matsize.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_bmstatus.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_bigmatpoly.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_matpoly_ft.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_polymat.cpp.o CMakeFiles/lingen_p8_support.dir/lingen_matpoly.cpp.o
+/usr/bin/ranlib liblingen_p8_support.a

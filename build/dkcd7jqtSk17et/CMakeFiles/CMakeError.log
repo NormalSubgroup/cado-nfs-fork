@@ -1,0 +1,1122 @@
+Performing C++ SOURCE FILE Test UINT64_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_cbf3a/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_cbf3a.dir/build.make CMakeFiles/cmTC_cbf3a.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cbf3a.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT64_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_cbf3a.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:63: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint64_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_cbf3a.dir/build.make:78: CMakeFiles/cmTC_cbf3a.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_cbf3a/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint64_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_LONG_IS_EXACTLY_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_6c276/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_6c276.dir/build.make CMakeFiles/cmTC_6c276.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6c276.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_LONG_IS_EXACTLY_UNSIGNED_LONG -o CMakeFiles/cmTC_6c276.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:68: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long long, unsigned long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_6c276.dir/build.make:78: CMakeFiles/cmTC_6c276.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_6c276/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long long, unsigned long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_IS_EXACTLY_UNSIGNED failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_6477a/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_6477a.dir/build.make CMakeFiles/cmTC_6477a.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6477a.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_IS_EXACTLY_UNSIGNED -o CMakeFiles/cmTC_6477a.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:62: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long, unsigned int>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_6477a.dir/build.make:78: CMakeFiles/cmTC_6477a.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_6477a/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long, unsigned int>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_IS_COMPATIBLE_WITH_UNSIGNED failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_cf96a/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_cf96a.dir/build.make CMakeFiles/cmTC_cf96a.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf96a.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_IS_COMPATIBLE_WITH_UNSIGNED -o CMakeFiles/cmTC_cf96a.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:68: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long, unsigned int>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(unsigned long) == sizeof(unsigned int)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<unsigned long>::value == std::is_signed<unsigned int>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_cf96a.dir/build.make:78: CMakeFiles/cmTC_cf96a.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_cf96a/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long, unsigned int>::value ||
+        (sizeof(unsigned long) == sizeof(unsigned int)
+        && std::is_signed<unsigned long>::value == std::is_signed<unsigned int>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test SIZE_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_dd284/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_dd284.dir/build.make CMakeFiles/cmTC_dd284.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_dd284.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DSIZE_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_dd284.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:61: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<size_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_dd284.dir/build.make:78: CMakeFiles/cmTC_dd284.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_dd284/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<size_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MP_LIMB_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_fbf84/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_fbf84.dir/build.make CMakeFiles/cmTC_fbf84.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fbf84.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMP_LIMB_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_fbf84.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:64: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<mp_limb_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_fbf84.dir/build.make:78: CMakeFiles/cmTC_fbf84.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_fbf84/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<mp_limb_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UINT32_T_IS_EXACTLY_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_61301/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_61301.dir/build.make CMakeFiles/cmTC_61301.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_61301.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT32_T_IS_EXACTLY_UNSIGNED_LONG -o CMakeFiles/cmTC_61301.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:58: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint32_t, unsigned long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_61301.dir/build.make:78: CMakeFiles/cmTC_61301.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_61301/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint32_t, unsigned long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UINT32_T_IS_COMPATIBLE_WITH_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_78b27/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_78b27.dir/build.make CMakeFiles/cmTC_78b27.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78b27.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT32_T_IS_COMPATIBLE_WITH_UNSIGNED_LONG -o CMakeFiles/cmTC_78b27.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:64: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint32_t, unsigned long>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(uint32_t) == sizeof(unsigned long)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<uint32_t>::value == std::is_signed<unsigned long>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_78b27.dir/build.make:78: CMakeFiles/cmTC_78b27.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_78b27/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint32_t, unsigned long>::value ||
+        (sizeof(uint32_t) == sizeof(unsigned long)
+        && std::is_signed<uint32_t>::value == std::is_signed<unsigned long>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test INT64_T_IS_EXACTLY_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_f5d1e/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_f5d1e.dir/build.make CMakeFiles/cmTC_f5d1e.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5d1e.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DINT64_T_IS_EXACTLY_LONG_LONG -o CMakeFiles/cmTC_f5d1e.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:53: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<int64_t, long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_f5d1e.dir/build.make:78: CMakeFiles/cmTC_f5d1e.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_f5d1e/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<int64_t, long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test LONG_LONG_IS_EXACTLY_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_38ee5/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_38ee5.dir/build.make CMakeFiles/cmTC_38ee5.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_38ee5.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DLONG_LONG_IS_EXACTLY_LONG -o CMakeFiles/cmTC_38ee5.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:50: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<long long, long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_38ee5.dir/build.make:78: CMakeFiles/cmTC_38ee5.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_38ee5/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<long long, long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UINT64_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_3665c/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_3665c.dir/build.make CMakeFiles/cmTC_3665c.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3665c.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT64_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_3665c.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:63: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint64_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_3665c.dir/build.make:78: CMakeFiles/cmTC_3665c.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_3665c/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint64_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_LONG_IS_EXACTLY_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_a5987/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_a5987.dir/build.make CMakeFiles/cmTC_a5987.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a5987.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_LONG_IS_EXACTLY_UNSIGNED_LONG -o CMakeFiles/cmTC_a5987.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:68: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long long, unsigned long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_a5987.dir/build.make:78: CMakeFiles/cmTC_a5987.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_a5987/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long long, unsigned long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_IS_EXACTLY_UNSIGNED failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_12bf6/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_12bf6.dir/build.make CMakeFiles/cmTC_12bf6.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12bf6.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_IS_EXACTLY_UNSIGNED -o CMakeFiles/cmTC_12bf6.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:62: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long, unsigned int>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_12bf6.dir/build.make:78: CMakeFiles/cmTC_12bf6.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_12bf6/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long, unsigned int>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UNSIGNED_LONG_IS_COMPATIBLE_WITH_UNSIGNED failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_4acb9/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_4acb9.dir/build.make CMakeFiles/cmTC_4acb9.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4acb9.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUNSIGNED_LONG_IS_COMPATIBLE_WITH_UNSIGNED -o CMakeFiles/cmTC_4acb9.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:68: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<unsigned long, unsigned int>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(unsigned long) == sizeof(unsigned int)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<unsigned long>::value == std::is_signed<unsigned int>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_4acb9.dir/build.make:78: CMakeFiles/cmTC_4acb9.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_4acb9/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<unsigned long, unsigned int>::value ||
+        (sizeof(unsigned long) == sizeof(unsigned int)
+        && std::is_signed<unsigned long>::value == std::is_signed<unsigned int>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test SIZE_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_e3afd/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_e3afd.dir/build.make CMakeFiles/cmTC_e3afd.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3afd.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DSIZE_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_e3afd.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:61: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<size_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_e3afd.dir/build.make:78: CMakeFiles/cmTC_e3afd.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_e3afd/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<size_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MP_LIMB_T_IS_EXACTLY_UNSIGNED_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_1a70d/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_1a70d.dir/build.make CMakeFiles/cmTC_1a70d.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1a70d.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMP_LIMB_T_IS_EXACTLY_UNSIGNED_LONG_LONG -o CMakeFiles/cmTC_1a70d.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:64: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<mp_limb_t, unsigned long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_1a70d.dir/build.make:78: CMakeFiles/cmTC_1a70d.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_1a70d/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<mp_limb_t, unsigned long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UINT32_T_IS_EXACTLY_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_4a6c1/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_4a6c1.dir/build.make CMakeFiles/cmTC_4a6c1.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a6c1.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT32_T_IS_EXACTLY_UNSIGNED_LONG -o CMakeFiles/cmTC_4a6c1.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:58: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint32_t, unsigned long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_4a6c1.dir/build.make:78: CMakeFiles/cmTC_4a6c1.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_4a6c1/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint32_t, unsigned long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test UINT32_T_IS_COMPATIBLE_WITH_UNSIGNED_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_f6ee0/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_f6ee0.dir/build.make CMakeFiles/cmTC_f6ee0.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6ee0.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DUINT32_T_IS_COMPATIBLE_WITH_UNSIGNED_LONG -o CMakeFiles/cmTC_f6ee0.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:64: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<uint32_t, unsigned long>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(uint32_t) == sizeof(unsigned long)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<uint32_t>::value == std::is_signed<unsigned long>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_f6ee0.dir/build.make:78: CMakeFiles/cmTC_f6ee0.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_f6ee0/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<uint32_t, unsigned long>::value ||
+        (sizeof(uint32_t) == sizeof(unsigned long)
+        && std::is_signed<uint32_t>::value == std::is_signed<unsigned long>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test INT64_T_IS_EXACTLY_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_3ea39/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_3ea39.dir/build.make CMakeFiles/cmTC_3ea39.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3ea39.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DINT64_T_IS_EXACTLY_LONG_LONG -o CMakeFiles/cmTC_3ea39.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:53: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<int64_t, long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_3ea39.dir/build.make:78: CMakeFiles/cmTC_3ea39.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_3ea39/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<int64_t, long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test LONG_LONG_IS_EXACTLY_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_80e3a/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_80e3a.dir/build.make CMakeFiles/cmTC_80e3a.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_80e3a.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DLONG_LONG_IS_EXACTLY_LONG -o CMakeFiles/cmTC_80e3a.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:50: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<long long, long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_80e3a.dir/build.make:78: CMakeFiles/cmTC_80e3a.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_80e3a/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<long long, long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test LONG_IS_EXACTLY_INT failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_d19dd/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_d19dd.dir/build.make CMakeFiles/cmTC_d19dd.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d19dd.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DLONG_IS_EXACTLY_INT -o CMakeFiles/cmTC_d19dd.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:44: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<long, int>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_d19dd.dir/build.make:78: CMakeFiles/cmTC_d19dd.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_d19dd/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<long, int>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test LONG_IS_COMPATIBLE_WITH_INT failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_d9c7b/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_d9c7b.dir/build.make CMakeFiles/cmTC_d9c7b.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d9c7b.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DLONG_IS_COMPATIBLE_WITH_INT -o CMakeFiles/cmTC_d9c7b.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:50: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<long, int>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(long) == sizeof(int)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<long>::value == std::is_signed<int>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_d9c7b.dir/build.make:78: CMakeFiles/cmTC_d9c7b.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_d9c7b/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<long, int>::value ||
+        (sizeof(long) == sizeof(int)
+        && std::is_signed<long>::value == std::is_signed<int>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test SSIZE_T_IS_EXACTLY_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_d951c/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_d951c.dir/build.make CMakeFiles/cmTC_d951c.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d951c.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DSSIZE_T_IS_EXACTLY_LONG_LONG -o CMakeFiles/cmTC_d951c.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:53: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<ssize_t, long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_d951c.dir/build.make:78: CMakeFiles/cmTC_d951c.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_d951c/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<ssize_t, long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test INT32_T_IS_EXACTLY_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_e9536/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_e9536.dir/build.make CMakeFiles/cmTC_e9536.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e9536.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DINT32_T_IS_EXACTLY_LONG -o CMakeFiles/cmTC_e9536.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:48: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<int32_t, long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_e9536.dir/build.make:78: CMakeFiles/cmTC_e9536.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_e9536/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<int32_t, long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test INT32_T_IS_COMPATIBLE_WITH_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_7771f/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_7771f.dir/build.make CMakeFiles/cmTC_7771f.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7771f.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DINT32_T_IS_COMPATIBLE_WITH_LONG -o CMakeFiles/cmTC_7771f.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:54: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<int32_t, long>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(int32_t) == sizeof(long)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<int32_t>::value == std::is_signed<long>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_7771f.dir/build.make:78: CMakeFiles/cmTC_7771f.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_7771f/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<int32_t, long>::value ||
+        (sizeof(int32_t) == sizeof(long)
+        && std::is_signed<int32_t>::value == std::is_signed<long>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MP_SIZE_T_IS_EXACTLY_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_caaa2/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_caaa2.dir/build.make CMakeFiles/cmTC_caaa2.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_caaa2.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMP_SIZE_T_IS_EXACTLY_LONG_LONG -o CMakeFiles/cmTC_caaa2.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:55: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<mp_size_t, long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_caaa2.dir/build.make:78: CMakeFiles/cmTC_caaa2.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_caaa2/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<mp_size_t, long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MP_SIZE_T_IS_EXACTLY_INT failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_3e58a/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_3e58a.dir/build.make CMakeFiles/cmTC_3e58a.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3e58a.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMP_SIZE_T_IS_EXACTLY_INT -o CMakeFiles/cmTC_3e58a.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:49: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<mp_size_t, int>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_3e58a.dir/build.make:78: CMakeFiles/cmTC_3e58a.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_3e58a/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<mp_size_t, int>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MP_SIZE_T_IS_COMPATIBLE_WITH_INT failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_eec31/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_eec31.dir/build.make CMakeFiles/cmTC_eec31.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eec31.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMP_SIZE_T_IS_COMPATIBLE_WITH_INT -o CMakeFiles/cmTC_eec31.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:55: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<mp_size_t, int>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(mp_size_t) == sizeof(int)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<mp_size_t>::value == std::is_signed<int>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_eec31.dir/build.make:78: CMakeFiles/cmTC_eec31.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_eec31/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<mp_size_t, int>::value ||
+        (sizeof(mp_size_t) == sizeof(int)
+        && std::is_signed<mp_size_t>::value == std::is_signed<int>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MPZ_INTERNAL_SIZE_T_IS_EXACTLY_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_10b49/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_10b49.dir/build.make CMakeFiles/cmTC_10b49.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_10b49.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMPZ_INTERNAL_SIZE_T_IS_EXACTLY_LONG_LONG -o CMakeFiles/cmTC_10b49.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:78: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_10b49.dir/build.make:78: CMakeFiles/cmTC_10b49.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_10b49/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MPZ_INTERNAL_SIZE_T_IS_COMPATIBLE_WITH_LONG_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_a3f24/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_a3f24.dir/build.make CMakeFiles/cmTC_a3f24.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a3f24.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMPZ_INTERNAL_SIZE_T_IS_COMPATIBLE_WITH_LONG_LONG -o CMakeFiles/cmTC_a3f24.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:84: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long long>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(decltype(__mpz_struct::_mp_size)) == sizeof(long long)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<decltype(__mpz_struct::_mp_size)>::value == std::is_signed<long long>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_a3f24.dir/build.make:78: CMakeFiles/cmTC_a3f24.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_a3f24/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long long>::value ||
+        (sizeof(decltype(__mpz_struct::_mp_size)) == sizeof(long long)
+        && std::is_signed<decltype(__mpz_struct::_mp_size)>::value == std::is_signed<long long>::value)
+        , "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MPZ_INTERNAL_SIZE_T_IS_EXACTLY_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_ed2da/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_ed2da.dir/build.make CMakeFiles/cmTC_ed2da.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ed2da.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMPZ_INTERNAL_SIZE_T_IS_EXACTLY_LONG -o CMakeFiles/cmTC_ed2da.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:73: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long>::value, "not this type");
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+make[2]: *** [CMakeFiles/cmTC_ed2da.dir/build.make:78: CMakeFiles/cmTC_ed2da.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_ed2da/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long>::value, "not this type");
+    return 0;
+}
+
+Performing C++ SOURCE FILE Test MPZ_INTERNAL_SIZE_T_IS_COMPATIBLE_WITH_LONG failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp
+
+Run Build Command(s):make -f Makefile cmTC_420ae/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make  -f CMakeFiles/cmTC_420ae.dir/build.make CMakeFiles/cmTC_420ae.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_420ae.dir/src.cxx.o
+/usr/bin/c++   -export-dynamic -std=c++17 -Wno-c++11-compat -W -Wall -O2  -Wno-literal-suffix -DMPZ_INTERNAL_SIZE_T_IS_COMPATIBLE_WITH_LONG -o CMakeFiles/cmTC_420ae.dir/src.cxx.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp/src.cxx:8:79: error: static assertion failed: not this type
+    8 |     static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long>::value ||
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+    9 |         (sizeof(decltype(__mpz_struct::_mp_size)) == sizeof(long)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~              
+   10 |         && std::is_signed<decltype(__mpz_struct::_mp_size)>::value == std::is_signed<long>::value)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/cmTC_420ae.dir/build.make:78: CMakeFiles/cmTC_420ae.dir/src.cxx.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+make[1]: *** [Makefile:127: cmTC_420ae/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <type_traits>
+#include <stdint.h>
+#include <stdio.h>
+#include <gmp.h>
+int main()
+{
+    static_assert(std::is_same<decltype(__mpz_struct::_mp_size), long>::value ||
+        (sizeof(decltype(__mpz_struct::_mp_size)) == sizeof(long)
+        && std::is_signed<decltype(__mpz_struct::_mp_size)>::value == std::is_signed<long>::value)
+        , "not this type");
+    return 0;
+}
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw
+
+Run Build Command(s):make -f Makefile cmTC_1cc96/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw'
+make  -f CMakeFiles/cmTC_1cc96.dir/build.make CMakeFiles/cmTC_1cc96.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw'
+Building C object CMakeFiles/cmTC_1cc96.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -DCHECK_FUNCTION_EXISTS=strlcpy -o CMakeFiles/cmTC_1cc96.dir/CheckFunctionExists.c.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw/CheckFunctionExists.c
+Linking C executable cmTC_1cc96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cc96.dir/link.txt --verbose=1
+/usr/bin/cc -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -DCHECK_FUNCTION_EXISTS=strlcpy CMakeFiles/cmTC_1cc96.dir/CheckFunctionExists.c.o -o cmTC_1cc96 
+/usr/bin/ld: CMakeFiles/cmTC_1cc96.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup+0xc): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_1cc96.dir/build.make:99: cmTC_1cc96] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw'
+make[1]: *** [Makefile:127: cmTC_1cc96/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-9lJbNw'
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j
+
+Run Build Command(s):make -f Makefile cmTC_0ef05/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j'
+make  -f CMakeFiles/cmTC_0ef05.dir/build.make CMakeFiles/cmTC_0ef05.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j'
+Building C object CMakeFiles/cmTC_0ef05.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -DCHECK_FUNCTION_EXISTS=strlcat -o CMakeFiles/cmTC_0ef05.dir/CheckFunctionExists.c.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j/CheckFunctionExists.c
+Linking C executable cmTC_0ef05
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ef05.dir/link.txt --verbose=1
+/usr/bin/cc -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -DCHECK_FUNCTION_EXISTS=strlcat CMakeFiles/cmTC_0ef05.dir/CheckFunctionExists.c.o -o cmTC_0ef05 
+/usr/bin/ld: CMakeFiles/cmTC_0ef05.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text.startup+0xc): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/cmTC_0ef05.dir/build.make:99: cmTC_0ef05] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j'
+make[1]: *** [Makefile:127: cmTC_0ef05/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-tRQE7j'
+
+
+
+Performing C SOURCE FILE Test RUNNING_COVERITY failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT
+
+Run Build Command(s):make -f Makefile cmTC_6e0f8/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT'
+make  -f CMakeFiles/cmTC_6e0f8.dir/build.make CMakeFiles/cmTC_6e0f8.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT'
+Building C object CMakeFiles/cmTC_6e0f8.dir/src.c.o
+/usr/bin/cc -DRUNNING_COVERITY  -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2  -o CMakeFiles/cmTC_6e0f8.dir/src.c.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT/src.c
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT/src.c:3:5: error: unknown type name ‘choke’
+    3 |     choke me
+      |     ^~~~~
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT/src.c:3:13: error: expected ‘;’ before ‘int’
+    3 |     choke me
+      |             ^
+      |             ;
+    4 | #endif
+    5 |     int main() { return 0; }
+      |     ~~~      
+make[2]: *** [CMakeFiles/cmTC_6e0f8.dir/build.make:78: CMakeFiles/cmTC_6e0f8.dir/src.c.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT'
+make[1]: *** [Makefile:127: cmTC_6e0f8/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-iAsEjT'
+
+
+Source file was:
+
+#if !defined(__COVERITY__)
+    choke me
+#endif
+    int main() { return 0; }
+    
+
+Determining if files sys/endian.h exist failed with the following output:
+Change Dir: /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW
+
+Run Build Command(s):make -f Makefile cmTC_83ca4/fast && make[1]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW'
+make  -f CMakeFiles/cmTC_83ca4.dir/build.make CMakeFiles/cmTC_83ca4.dir/build
+make[2]: Entering directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW'
+Building C object CMakeFiles/cmTC_83ca4.dir/HAVE_SYS_ENDIAN_H.c.o
+/usr/bin/cc   -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2  -o CMakeFiles/cmTC_83ca4.dir/HAVE_SYS_ENDIAN_H.c.o -c /root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW/HAVE_SYS_ENDIAN_H.c
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW/HAVE_SYS_ENDIAN_H.c:2:10: fatal error: sys/endian.h: No such file or directory
+    2 | #include <sys/endian.h>
+      |          ^~~~~~~~~~~~~~
+compilation terminated.
+make[2]: *** [CMakeFiles/cmTC_83ca4.dir/build.make:78: CMakeFiles/cmTC_83ca4.dir/HAVE_SYS_ENDIAN_H.c.o] Error 1
+make[2]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW'
+make[1]: *** [Makefile:127: cmTC_83ca4/fast] Error 2
+make[1]: Leaving directory '/root/tools/cado-nfs/build/dkcd7jqtSk17et/CMakeFiles/CMakeScratch/TryCompile-oIYHeW'
+
+
+Source:
+/* */
+#include <sys/endian.h>
+
+
+int main(void){return 0;}
+

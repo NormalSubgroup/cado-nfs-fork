@@ -1,0 +1,1 @@
+/root/tools/cado-nfs/build/dkcd7jqtSk17et/ccwrap.pl -std=c99 -W -Wall -O2  -msse3 -mssse3 -msse4.1 -mpopcnt -mavx -mpclmul -mavx2 -fopenmp CMakeFiles/hwloc_cado_helper.dir/hwloc_cado_helper.c.o -o hwloc_cado_helper  -lhwloc 
